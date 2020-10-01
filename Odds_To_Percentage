@@ -31,7 +31,7 @@ int main() {
 void display_instructions()
 {
 	cout << "This Program helps you find the percentage of success of your current odds." << endl << endl
-	<< "Please Enter Part 1 of your odds. press ENTER then type Part 2 of your odds. " << endl
+	<< "Please Enter Part 1 of your odds and then press ENTER then add Part 2 of your odds. " << endl
 	<< "Example: Odds 10 to 1 (10 = [Part 1] ---- 1 = [Part 2]) " << endl << endl;
 	
 }
@@ -48,6 +48,7 @@ double get_odds(double& odd1, double& odd2)
 		
 		if (cin.fail()) {
 			cout << "ERROR. PLEASE ENTER A VALID NUMBER."; 
+			/*You Should Enter Valid Number To Calaculate the percantage of success of your current odds*/
 			exit(1);
 		}
 		
@@ -55,6 +56,7 @@ double get_odds(double& odd1, double& odd2)
 		
 		if (cin.fail()) {
 			cout << "ERROR. PLEASE ENTER A VALID NUMBER."; 
+			/*You Should Enter Valid Number To Calaculate the percantage of success of your current odds*/
 			exit(1);
 		}
 		break;
